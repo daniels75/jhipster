@@ -1,24 +1,20 @@
 1. create blog.jdl 
- hipster import-jdl blog.jdl
+ jhipster import-jdl blog.jdl
 
-Test4
- 
-Application successfully committed to Git from c:\daniels\jhipster\blog.
+ jhipster import-jdl simple.jdl
 
-If you find JHipster useful consider sponsoring the project https://www.jhipster.tech/sponsors/
+ ynaxdH
+	Y: yes (Default)
+	n: no
+	a: yes to this question and all others (or always yes).
+	x: abort (exit)
+	d: show the differences between the old and the new file
+	h: help, list all options
 
-Server application generated successfully.
-
-Run your Spring Boot application:
+2. Run your Spring Boot application:
 ./mvnw (mvnw if using Windows Command Prompt)
 
 Client application generated successfully.
 
-Start your Webpack development server with:
+3. Start your Webpack development server with:
  npm start
-
-
-> blog@0.0.1-SNAPSHOT cleanup c:\daniels\jhipster\blog
-> rimraf target/classes/static/ target/classes/aot
-
-INFO! Congratulations, JHipster execution is complete!

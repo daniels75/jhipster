@@ -1,0 +1,4 @@
+entity SimpleTable {
+  name String required minlength(2),
+  content String required minlength(3)
+}

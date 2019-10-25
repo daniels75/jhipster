@@ -1,0 +1,23 @@
+{
+  "blogApp": {
+    "simpleTable": {
+      "home": {
+        "title": "Simple Table",
+        "createLabel": "Dodaj Simple Table",
+        "createOrEditLabel": "Dodaj lub edytuj: Simple Table",
+        "notFound": "No Simple Tables found"
+      },
+      "created": "Utworzono nowy obiekt typu Simple Table z identyfikatorem {{ param }}",
+      "updated": "Uaktualniono obiekt typu Simple Table z identyfikatorem {{ param }}",
+      "deleted": "Usunięto obiekt typu Simple Table z identyfikatorem {{ param }}",
+      "delete": {
+        "question": "Czy na pewno chcesz usunąć Simple Table {{ id }}?"
+      },
+      "detail": {
+        "title": "Simple Table"
+      },
+      "name": "Name",
+      "content": "Content"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "blogApp": {
+    "blog": {
+      "home": {
+        "title": "Blog",
+        "createLabel": "Dodaj Blog",
+        "createOrEditLabel": "Dodaj lub edytuj: Blog",
+        "notFound": "No Blogs found"
+      },
+      "created": "Utworzono nowy obiekt typu Blog z identyfikatorem {{ param }}",
+      "updated": "Uaktualniono obiekt typu Blog z identyfikatorem {{ param }}",
+      "deleted": "Usunięto obiekt typu Blog z identyfikatorem {{ param }}",
+      "delete": {
+        "question": "Czy na pewno chcesz usunąć Blog {{ id }}?"
+      },
+      "detail": {
+        "title": "Blog"
+      },
+      "name": "Name",
+      "handle": "Handle",
+      "user": "User"
+    }
+  }
+}

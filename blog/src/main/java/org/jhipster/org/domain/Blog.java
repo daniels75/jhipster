@@ -9,7 +9,7 @@ import javax.validation.constraints.*;
 import java.io.Serializable;
 
 /**
- * A Blog.
+ * Blog.
  */
 @Entity
 @Table(name = "blog")

@@ -1,7 +1,8 @@
 1. create blog.jdl 
  hipster import-jdl blog.jdl
 
-
+Test4
+ 
 Application successfully committed to Git from c:\daniels\jhipster\blog.
 
 If you find JHipster useful consider sponsoring the project https://www.jhipster.tech/sponsors/

@@ -126,13 +126,6 @@ public class BlogResource {
      * @return the {@link ResponseEntity} with status {@code 204 (NO_CONTENT)}.
      */
     @DeleteMapping("/blogs/{id}")
-    public ResponseEntity<Void> deleteBlog(@PathVariable Long id) {
-        log.debug("REST request to delete Blog : {}", id);
-        blogRepository.deleteById(id);
-        return ResponseEntity.noContent().headers(HeaderUtil.createEntityDeletionAlert(applicationName, true, ENTITY_NAME, id.toString())).build();
-    }
-
-    @DeleteMapping("/blogs/{id}")
     public ResponseEntity<?> deleteBlog(@PathVariable Long id) {
         log.debug("REST request to delete Blog : {}", id);
         Optional<Blog> blog = blogRepository.findById(id);

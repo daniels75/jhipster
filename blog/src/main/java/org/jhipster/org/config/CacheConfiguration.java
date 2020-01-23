@@ -48,6 +48,7 @@ public class CacheConfiguration {
             createCache(cm, org.jhipster.org.domain.Tag.class.getName());
             createCache(cm, org.jhipster.org.domain.Tag.class.getName() + ".entries");
             createCache(cm, org.jhipster.org.domain.SimpleTable.class.getName());
+            createCache(cm, org.jhipster.org.domain.Todo.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

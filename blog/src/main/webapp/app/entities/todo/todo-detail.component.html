@@ -1,0 +1,35 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="todo">
+            <h2><span jhiTranslate="blogApp.todo.detail.title">Todo</span> {{todo.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="blogApp.todo.title">Title</span></dt>
+                <dd>
+                    <span>{{todo.title}}</span>
+                </dd>
+                <dt><span jhiTranslate="blogApp.todo.description">Description</span></dt>
+                <dd>
+                    <span>{{todo.description}}</span>
+                </dd>
+                <dt><span jhiTranslate="blogApp.todo.complete">Complete</span></dt>
+                <dd>
+                    <span>{{todo.complete}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/todo', todo.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

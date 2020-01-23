@@ -19,6 +19,10 @@ import { RouterModule } from '@angular/router';
       {
         path: 'simple-table',
         loadChildren: () => import('./simple-table/simple-table.module').then(m => m.BlogSimpleTableModule)
+      },
+      {
+        path: 'todo',
+        loadChildren: () => import('./todo/todo.module').then(m => m.BlogTodoModule)
       }
       /* jhipster-needle-add-entity-route - JHipster will add entity modules routes here */
     ])

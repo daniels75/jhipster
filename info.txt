@@ -18,3 +18,90 @@ Client application generated successfully.
 
 3. Start your Webpack development server with:
  npm start
+
+ 
+ ------------
+ [Todo]
+	jhipster import-jdl todo.jdl
+	
+	
+	The entity Todo is being updated.
+
+   create src\main\resources\config\liquibase\changelog\20191208190312_added_entity_Todo.xml
+   create src\main\resources\config\liquibase\fake-data\todo.csv
+   create src\main\java\org\jhipster\org\domain\Todo.java
+   create src\main\java\org\jhipster\org\repository\TodoRepository.java
+   create src\main\java\org\jhipster\org\web\rest\TodoResource.java
+   create src\test\java\org\jhipster\org\web\rest\TodoResourceIT.java
+ conflict src\main\resources\config\liquibase\master.xml
+? Overwrite src\main\resources\config\liquibase\master.xml? overwrite
+    force src\main\resources\config\liquibase\master.xml
+ conflict src\main\java\org\jhipster\org\config\CacheConfiguration.java
+? Overwrite src\main\java\org\jhipster\org\config\CacheConfiguration.java? overwrite
+    force src\main\java\org\jhipster\org\config\CacheConfiguration.java
+   create src\main\webapp\app\entities\todo\todo.component.html
+   create src\main\webapp\app\entities\todo\todo-detail.component.html
+   create src\main\webapp\app\entities\todo\todo-update.component.html
+   create src\main\webapp\app\entities\todo\todo-delete-dialog.component.html
+ conflict src\main\webapp\app\layouts\navbar\navbar.component.html
+? Overwrite src\main\webapp\app\layouts\navbar\navbar.component.html? overwrite
+    force src\main\webapp\app\layouts\navbar\navbar.component.html
+   create src\main\webapp\app\entities\todo\todo.module.ts
+   create src\main\webapp\app\entities\todo\todo.route.ts
+   create src\main\webapp\app\shared\model\todo.model.ts
+   create src\main\webapp\app\entities\todo\todo.component.ts
+   create src\main\webapp\app\entities\todo\todo-detail.component.ts
+   create src\main\webapp\app\entities\todo\todo.service.ts
+   create src\main\webapp\app\entities\todo\todo-update.component.ts
+   create src\main\webapp\app\entities\todo\todo-delete-dialog.component.ts
+   create src\test\javascript\spec\app\entities\todo\todo-detail.component.spec.ts
+   create src\test\javascript\spec\app\entities\todo\todo.component.spec.ts
+   create src\test\javascript\spec\app\entities\todo\todo.service.spec.ts
+   create src\test\javascript\spec\app\entities\todo\todo-update.component.spec.ts
+   create src\test\javascript\spec\app\entities\todo\todo-delete-dialog.component.spec.ts
+   create src\test\javascript\e2e\entities\todo\todo.page-object.ts
+   create src\test\javascript\e2e\entities\todo\todo.spec.ts
+ conflict src\main\webapp\app\entities\entity.module.ts
+? Overwrite src\main\webapp\app\entities\entity.module.ts? overwrite this and all others
+    force src\main\webapp\app\entities\entity.module.ts
+   create src\main\webapp\i18n\en\todo.json
+    force src\main\webapp\i18n\en\global.json
+   create src\main\webapp\i18n\pl\todo.json
+    force src\main\webapp\i18n\pl\global.json
+
+Running `webpack:build` to update client app
+
+Entity Todo generated successfully.
+
+> blog@0.0.1-SNAPSHOT webpack:build c:\daniels\jhipster\blog
+> npm run cleanup && npm run webpack:build:main
+
+
+> blog@0.0.1-SNAPSHOT cleanup c:\daniels\jhipster\blog
+> rimraf target/classes/static/ target/classes/aot
+
+
+> blog@0.0.1-SNAPSHOT webpack:build:main c:\daniels\jhipster\blog
+> npm run webpack -- --config webpack/webpack.dev.js --env.stats=minimal
+
+
+> blog@0.0.1-SNAPSHOT webpack c:\daniels\jhipster\blog
+> node --max_old_space_size=4096 node_modules/webpack/bin/webpack.js "--config" "webpack/webpack.dev.js" "--env.stats=minimal"
+
+Webpack: Starting ...
+Starting type checking service...
+Webpack: Starting ...
+
+  √ Compile modules
+  √ Build modules
+  √ Optimize modules
+  √ Emit files
+
+Webpack: Finished after 28.262 seconds.
+
+
+
+ DONE  Compiled successfully in 28299ms                                                                                                                                                                    20:04:39
+
+   649 modules
+INFO! Congratulations, JHipster execution is complete!

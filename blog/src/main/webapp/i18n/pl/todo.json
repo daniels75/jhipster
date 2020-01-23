@@ -1,0 +1,24 @@
+{
+  "blogApp": {
+    "todo": {
+      "home": {
+        "title": "Todo",
+        "createLabel": "Dodaj Todo",
+        "createOrEditLabel": "Dodaj lub edytuj: Todo",
+        "notFound": "No Todos found"
+      },
+      "created": "Utworzono nowy obiekt typu Todo z identyfikatorem {{ param }}",
+      "updated": "Uaktualniono obiekt typu Todo z identyfikatorem {{ param }}",
+      "deleted": "Usunięto obiekt typu Todo z identyfikatorem {{ param }}",
+      "delete": {
+        "question": "Czy na pewno chcesz usunąć Todo {{ id }}?"
+      },
+      "detail": {
+        "title": "Todo"
+      },
+      "title": "Title",
+      "description": "Description",
+      "complete": "Complete"
+    }
+  }
+}
